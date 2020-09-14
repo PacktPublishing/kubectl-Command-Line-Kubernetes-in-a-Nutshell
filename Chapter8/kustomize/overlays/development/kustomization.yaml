@@ -1,0 +1,13 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+bases:
+- ../../base
+
+nameSuffix: -development
+
+commonLabels:
+  environment: development
+
+namespace: nginx-dev
+
